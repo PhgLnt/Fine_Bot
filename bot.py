@@ -16,6 +16,7 @@ client = nextcord.Client(intents=intents)
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
 
+
 async def send_message(message, user_message, is_private):
     try:
         response = responses.handle_response(user_message)

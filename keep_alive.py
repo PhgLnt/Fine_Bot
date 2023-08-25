@@ -1,4 +1,3 @@
-import bot
 from flask import Flask
 from threading import Thread
 
@@ -17,10 +16,3 @@ def run():
 def keep_alive():
     t = Thread(target=run)
     t.start()
-
-
-keep_alive()
-
-if __name__ == '__main__':
-    # run the bot
-    bot.run_discord_bot()
