@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix='f', intents=intents)
 client = nextcord.Client(intents=intents)
 
 load_dotenv()
-TOKEN = os.getenv('TOKEN')
+TOKEN = os.environ.get('TOKEN')
 
 async def send_message(message, user_message, is_private):
     try:
